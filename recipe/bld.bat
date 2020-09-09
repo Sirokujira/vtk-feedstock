@@ -28,6 +28,8 @@ cmake .. -G "Ninja" ^
     -DVTK_RENDERING_BACKEND=OpenGL2 ^
     -DModule_vtkRenderingMatplotlib=ON ^
     -DModule_vtkIOXdmf2:INTERNAL=ON ^
+    -DVTK_Group_Qt:BOOL=ON ^
+    -DVTK_QT_VERSION:STRING=5 ^
     -DVTK_USE_SYSTEM_ZLIB:BOOL=ON ^
     -DVTK_USE_SYSTEM_FREETYPE:BOOL=ON ^
     -DVTK_USE_SYSTEM_LIBXML2:BOOL=ON ^

@@ -61,6 +61,7 @@ requirements:
     - libnetcdf
     - lz4-c
     - xorg-libxt  # [linux]
+    - qt
 
   run:
     - python
@@ -80,6 +81,7 @@ requirements:
     - libnetcdf
     - lz4-c
     - xorg-libxt  # [linux]
+    - qt
 
 test:
   imports:
@@ -97,7 +99,8 @@ test:
     - vtk.vtkViewsCore
     - vtk.vtkRenderingVolume
     - vtk.vtkInteractionWidgets
-    - vtkmodules
+    # Qt
+    - vtk.qt.QVTKRenderWindowInteractor
     - vtkmodules.vtkChartsCore
     - vtkmodules.vtkCommonCore
     - vtkmodules.vtkFiltersCore
